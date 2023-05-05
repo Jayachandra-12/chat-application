@@ -8,8 +8,9 @@ function Login() {
     const navigate = useNavigate()
     const onFormSubmit = async (userDetails) => {
         console.log(userDetails)
+        navigate("/messageform")
     }
-
+    
     return (
         <div>
             <section className="vh-100">

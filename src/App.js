@@ -5,6 +5,7 @@ import Signup from "./components/Signup/Signup";
 import { Link } from "react-router-dom";
 import { NavDropdown, Table } from "react-bootstrap";
 import { BsFillChatDotsFill } from 'react-icons/bs'
+import MessageForm from "./components/messageform/MessageForm";
 
 function App() {
     return (
@@ -49,11 +50,12 @@ function App() {
                     </NavDropdown>
                 } */}
             </nav>
-
+            
             <Routes>
                 <Route path="/" element={<Homepage />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element = {<Signup />} />
+                <Route path="/messageform" element = {<MessageForm />} />
             </Routes>
         </div>
     );
